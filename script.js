@@ -1,7 +1,7 @@
 // complete this js code
 function Person(name, age) {
-	this.name = namer;
-	this.age =age;
+	this.name = name;
+	this.age = age;
 }
 
 Person.prototype.greet = function () {
@@ -14,7 +14,8 @@ function Employee(name, age, jobTitle) {
 }
 
 Employee.prototype = Object.create(Person.prototype);
-Employee.prototype.contructor = Employee;
+Employee.prototype.constructor = Employee;
+
 Employee.prototype.jobGreet = function () {
 	console.log(
 		`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`
